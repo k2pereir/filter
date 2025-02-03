@@ -15,4 +15,3 @@ Next steps:
 * create cleaner image overlays
 * more character choices
 * polished UI
-* hosting website on GitHub Pages
