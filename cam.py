@@ -1,4 +1,5 @@
 import cv2 as cv 
+import numpy as np 
 
 cap = cv.VideoCapture(0)
 
@@ -20,6 +21,8 @@ while True:
     faces = face_cascade.detectMultiScale(gray, 1.3, 4)
 
     #creating reference points for face 
+    print(faces[0])
+    print(faces[0].split(" ")) #this doesn't work 
     # x = faces[0][0]
     # y = faces[0][1]
     # w = faces[0][2]
