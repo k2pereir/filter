@@ -1,4 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(220, 208, 255);
+}
+
+.greeting {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: rgb(66, 65, 65); 
+    font-weight: 800; 
+    font-size: 15px; 
+}
+
+.cam-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px; 
+}
+
 .camera {
     width: 900px;
     height: 700px;
+    border: 7px solid rgb(66, 65, 65);
+    border-radius: 5px;
 }
