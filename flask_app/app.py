@@ -11,7 +11,6 @@ def main_page():
 @app.route('/process')
 def process(): 
     character = request.args.get('char')
-    print(character)
     def video_frames():
         cam = cv.VideoCapture(0)
         cam.set(cv.CAP_PROP_FRAME_WIDTH, 800)
@@ -31,9 +30,8 @@ def process():
 @app.route('/cam')
 def cam(): 
     character = request.args.get('character')
-    print(character)
-    print("THIS IS THE FIRST ^^")
-    return render_template('cam.html', character = character)
+    name = request.args.get('name')
+    return render_template('cam.html', character = character, name = name)
 
 if __name__ == '__main__':
     app.run(debug=True)
